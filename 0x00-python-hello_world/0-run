@@ -1,4 +1,3 @@
 #!/bin/bash
-# Run the Python script specified in the $ pyfile variable 
 python3 "$PYFILE"
 
