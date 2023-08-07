@@ -1,3 +1,2 @@
 #!/usr/bin/bash
-chmod +x main.py
-./main.py
+chmod +x main.py ; ./main.py
