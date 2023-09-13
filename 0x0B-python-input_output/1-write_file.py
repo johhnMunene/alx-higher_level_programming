@@ -1,9 +1,14 @@
 #!/usr/bin/python3
 """
-Contains the read_file function
+a function that reads a text file and prints it to stdout:
 """
 
-def read_file(filename=""):
-    """Reads a text file (UTF8) and prints it to stdout"""
-    with open(filename, "r", encoding="utf-8") as f:
-        print(f.read(), end="")
+
+def write_file(filename="my_first_file.txt", text="This School is so cool!\n"):
+
+    with open(filename, 'w', encoding='utf-8') as file:
+        """returns the writen chars"""
+        return file.write(text)
+
+
+"""write_file('my_first_file.txt', 'This School is so cool!\n')"""
