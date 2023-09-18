@@ -2,6 +2,7 @@
 """Defines a rectangle class."""
 from models.base import Base
 
+
 class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -57,6 +58,14 @@ class Rectangle(Base):
         if value < 0:  # Corrected the condition to < 0
             raise ValueError("y must be >= 0")  # Corrected the error message
         self.__y = value
+
     def area(self):
         """Return the area of the Rectangle."""
         return self.width * self.height
+    """adding display fun"""
+    def display(self):
+        """
+        Display the Rectangle instance using '#' characters.
+        """
+        for i in range(self.__height):
+            print("#" * self.__width)
