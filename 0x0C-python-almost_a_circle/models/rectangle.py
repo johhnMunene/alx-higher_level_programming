@@ -63,14 +63,10 @@ class Rectangle(Base):
     def area(self):
         """Return the area of the Rectangle."""
         return self.width * self.height
-    """overriding the rectangle overriding __str__"""
-    def __str__(self):
-        return "[Rectangle]({}){}/{} - {}/{}".format(self.id,self.x,self.y,self.width,self.height)
-
     """adding display fun"""
     def display(self):
-        """
-        Display the Rectangle instance using '#' characters.
-        """
-        for i in range(self.__height):
-            print("#" * self.__width)
+        """display the obj by printing to stdout"""
+        for _ in range(self.__y):
+            print()
+        for _ in range(self.__height):
+            print(' ' * self.__x + '#' * self.__width)
