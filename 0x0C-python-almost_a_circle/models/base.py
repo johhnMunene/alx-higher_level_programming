@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """create a class base"""
 class Base:
     """private class attribute"""
