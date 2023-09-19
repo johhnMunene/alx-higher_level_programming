@@ -71,7 +71,7 @@ class Rectangle(Base):
         for _ in range(self.__height):
             print(' ' * self.__x + '#' * self.__width)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update attributes of the object."""
         if args and len(args) != 0:
             a = 0
@@ -90,7 +90,7 @@ class Rectangle(Base):
                 elif a == 4:
                     self.y = arg
                 a += 1
-                 elif kwargs and len(kwargs) != 0:
+        elif kwargs and len(kwargs) != 0:
             for k, v in kwargs.items():
                 if k == "id":
                     if v is None:
