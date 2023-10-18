@@ -1,13 +1,5 @@
- -- script that creates a tables called first_table
- -- desc 
-	-- id INT
-	-- name VARCHAR(256)
+-- Create the table "first_table" if it doesn't exist
 
-CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
-
-use  hbtn_0c_0; 
-
-CREATE TABLE first_table IF NOT EXIST(
-	id int,
-	name VARCHAR(256)
-);
+-- Use the newly created database
+USE hbtn_0c_0;
+CREATE TABLE IF NOT EXISTS first_table (id INT, name VARCHAR(256));
