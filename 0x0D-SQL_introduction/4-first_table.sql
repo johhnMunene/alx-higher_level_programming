@@ -1,7 +1,7 @@
  -- script that creates a tables called first_table
  -- desc 
-	--id INT
-	--name VARCHAR(256)
+	-- id INT
+	-- name VARCHAR(256)
 
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
 
