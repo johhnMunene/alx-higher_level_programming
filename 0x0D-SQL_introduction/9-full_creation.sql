@@ -1,0 +1,5 @@
+-- Write a script that creates a table second_table in the datab   ase hbtn_0c_0 in your MySQL server and add multiples rows.
+INSERT INTO second_table (name, score) VALUES ('John', 10);
+INSERT INTO second_table (name, score) VALUES ('Alex', 3);
+INSERT INTO second_table (name, score) VALUES ('Bob', 14);
+INSERT INTO second_table (name, score) VALUES ('George', 8);
