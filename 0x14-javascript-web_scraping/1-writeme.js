@@ -16,9 +16,3 @@ const writeToFile = (filePath, content) => {
     console.error(error);
   }
 };
-
-// Example usage:
-const filePath = process.argv[2]; // Get the file path from the second argument
-const contentToWrite = process.argv[3]; // Get the content to write from the third argument
-
-writeToFile(filePath, contentToWrite);
